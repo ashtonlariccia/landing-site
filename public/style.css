@@ -14,19 +14,21 @@
   src: url("/fonts/lora-italic.woff2") format("woff2");
 }
 
-/* Catppuccin Mocha palette on a fixed beige background */
+/* Catppuccin Mocha palette on a fixed off-white background */
 :root {
-  --beige: #f4eee1;
+  --offwhite: #fafaf7;
+  --hover-gray: #ebebeb;
   --base: #1e1e2e;
   --surface1: #45475a;
   --overlay0: #6c7086;
   --mauve: #cba6f7;
   --lavender: #b4befe;
+  --blue: #89b4fa;
   color-scheme: light;
 }
 
 html {
-  background: var(--beige);
+  background: var(--offwhite);
   color: var(--base);
   font-family: "Lora", Georgia, serif;
   line-height: 1.6;
@@ -37,11 +39,6 @@ body {
   margin: 0 auto;
   padding: 32px 16px;
   text-align: left;
-}
-
-::selection {
-  background: var(--mauve);
-  color: var(--base);
 }
 
 h1 {
@@ -68,17 +65,14 @@ nav {
   border-bottom: 1px solid var(--overlay0);
 }
 
-/* Mocha accents are too light for text on beige, so they're used as underline and highlight */
 a {
-  color: var(--base);
-  text-decoration-color: var(--mauve);
-  text-decoration-thickness: 2px;
-  text-underline-offset: 3px;
+  color: var(--blue);
+  text-decoration: none;
 }
 
 a:hover,
 a:focus-visible {
-  background: var(--lavender);
+  background: var(--hover-gray);
   text-decoration-color: var(--base);
 }
 
